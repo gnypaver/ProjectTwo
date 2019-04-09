@@ -12,6 +12,7 @@ to override the cancel method.-->
 		Date 4/8/2019
 		Reason: Name changed for consistency accross the app.-->
         <apex:pageBlock title="New Employee Wizard">
+
             <apex:pageBlockButtons >
                 <apex:commandButton action="{!save}" value="Save "/>
                 <apex:commandButton action="{!cancel}" value="Cancel "/>
@@ -32,4 +33,6 @@ to override the cancel method.-->
           	</apex:pageBlockSection>
         </apex:pageBlock>   
     </apex:form>
+
 </apex:page>
+

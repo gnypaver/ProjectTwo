@@ -21,21 +21,24 @@ public class SignUpPaginationExtension {
     }
    
     public SignUpPaginationExtension(ApexPages.StandardController con) {
+        
         su = (SignUp__c)con.getRecord();
     }
+     
     
     //Page Redirects
-    public PageReference Save() {
+    public PageReference Save() { 
         insert su;
         return Page.SignUpVFPage;
     }
     
-    public PageReference Cancel() {
+    public static PageReference Cancel() {
         return Page.SignUpVFPage;
     }
     
-    public PageReference Creation() {
+    public static PageReference Creation() {
         return Page.CreateSignUpPage1;
     }
+    
    
 }
